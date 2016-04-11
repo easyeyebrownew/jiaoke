@@ -5,8 +5,24 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JKJK"
         mc:Ignorable="d"
-        Title="LoginForm" Height="300" Width="300">
-    <Grid>
-        
+        Title="LoginForm" Height="720" d:DesignWidth="1150">
+    <Grid Opacity="0.8" d:IsEffectDisabled="True">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="285*"/>
+            <ColumnDefinition Width="286*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="wallhaven-315997.jpg"/>
+        </Grid.Background>
+        <Rectangle Fill="#FFF4F4F5" HorizontalAlignment="Right" Margin="0,133,-115,150" Width="230" RadiusY="16.5" RadiusX="16.5" Opacity="0.8"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Right" Height="19" Margin="0,0,-19,324" TextWrapping="Wrap" VerticalAlignment="Bottom" Width="105" Background="Black" BorderBrush="{x:Null}"/>
+        <PasswordBox x:Name="passwordBox" HorizontalAlignment="Right" Margin="0,0,-19,243.04" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Height="20" Width="105"/>
+        <Path Data="M483,375 C653,375 652.5,375 652.5,375" HorizontalAlignment="Right" Height="5" Margin="0,0,-85.5,311" Stretch="Fill" Stroke="#FFB8B8B8" StrokeThickness="2" VerticalAlignment="Bottom" Width="174.5"/>
+        <Path Data="M483,375 C653,375 652.5,375 652.5,375" HorizontalAlignment="Right" Height="5" Margin="0,0,-85.5,233.04" Stretch="Fill" Stroke="#FFB8B8B8" StrokeThickness="2" VerticalAlignment="Bottom" Width="174.5"/>
+        <Grid Grid.Column="1" HorizontalAlignment="Left" Height="34" Margin="-56,0,0,186" VerticalAlignment="Bottom" Width="114">
+            <Button x:Name="button" Content="Button" Style="{DynamicResource login}"/>
+
+        </Grid>
+
     </Grid>
 </Window>
