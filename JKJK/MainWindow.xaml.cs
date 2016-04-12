@@ -24,5 +24,11 @@ namespace JKJK
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            LoginForm loginf = new LoginForm();
+            loginf.Show();
+        }
     }
 }

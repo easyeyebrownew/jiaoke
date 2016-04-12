@@ -7,6 +7,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button x:Name="button" Content="Button" Height="50.408" Margin="150.551,103.299,229.492,0" Style="{DynamicResource test}" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Button" Height="30.178" Margin="153.922,68.121,258.041,0" VerticalAlignment="Top" Click="button1_Click"/>
     </Grid>
 </Window>
