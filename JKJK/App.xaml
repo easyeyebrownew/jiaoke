@@ -12,7 +12,7 @@
                     <ControlTemplate TargetType="{x:Type Button}">
                         <Grid>
                             <Rectangle x:Name="rectangle" RadiusY="16.5" RadiusX="16.5" Stroke="#FF4BDCBB" StrokeThickness="2" Width="Auto"/>
-                            <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Center" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="Center" Content="登陆" Width="Auto" Margin="43,9.02,41,10" Height="14.98" d:LayoutOverrides="TopMargin, BottomMargin" OpacityMask="#FFCD7C7C"/>
+                            <ContentPresenter x:Name="contentPresenter" HorizontalAlignment="Stretch" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="Stretch" Content="登陆" Width="Auto" Margin="48.25,6.85,35.25,6.83" Height="Auto" OpacityMask="#FFCD7C7C" d:LayoutOverrides="Height"/>
                         </Grid>
                         <ControlTemplate.Triggers>
                             <Trigger Property="IsFocused" Value="True"/>

@@ -14,20 +14,26 @@
         <Grid.Background>
             <ImageBrush ImageSource="wallhaven-315997.jpg"/>
         </Grid.Background>
-        <Grid Margin="-115,270.5,842.674,308" Grid.Column="1">
-            <Rectangle Fill="#FFF4F4F5" RadiusY="16.5" RadiusX="16.5" Opacity="0.905" RenderTransformOrigin="0.494,0.502" d:LayoutOverrides="HorizontalAlignment"/>
-            <TextBox x:Name="textBox" Height="19" Margin="26,0,99,161" TextWrapping="Wrap" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Opacity="0.6" FontStyle="Italic" FontFamily="Microsoft YaHei Light"/>
-            <PasswordBox x:Name="passwordBox" Margin="26,0,99,88.04" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Height="20" Background="{x:Null}" FontFamily="Microsoft YaHei Light" Opacity="0.6"/>
-            <Path Data="M483,375 C653,375 652.5,375 652.5,375" Height="5" Margin="26,0,29.5,161" Stretch="Fill" Stroke="#FFB8B8B8" StrokeThickness="2" VerticalAlignment="Bottom"/>
-            <Path Data="M483,375 C653,375 652.5,375 652.5,375" Height="5" Margin="26,0,29.5,83.04" Stretch="Fill" Stroke="#FFB8B8B8" StrokeThickness="2" VerticalAlignment="Bottom"/>
-            <Grid Height="34" Margin="59,0,57,36" VerticalAlignment="Bottom">
-                <Button x:Name="button" Content="Button" Style="{DynamicResource login}" Foreground="Black" FontFamily="Microsoft YaHei UI" FontSize="13.333" FontWeight="Bold" Background="#FF4D4A4A"/>
+        <Grid Margin="-8,0,10,10" Grid.ColumnSpan="2">
+            <Grid Width="230" Height="470" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <TextBox x:Name="textBox" Height="19" Margin="26,0,99,160.5" TextWrapping="Wrap" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Opacity="0.6" FontStyle="Italic" FontFamily="Microsoft YaHei Light"/>
+                <PasswordBox x:Name="passwordBox" Margin="26,0,99,87.54" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Height="20" Background="{x:Null}" FontFamily="Microsoft YaHei Light" Opacity="0.6"/>
+                <Rectangle Fill="#FFF4F4F5" RadiusY="16.5" RadiusX="16.5" Opacity="0.905" RenderTransformOrigin="0.494,0.502" Width="230" Height="470"/>
+                <Grid Height="116" Margin="59,60,53.624,0" VerticalAlignment="Top">
+                    <Image x:Name="malecostume_512_png" Source="malecostume-512.png" d:LayoutOverrides="VerticalAlignment"/>
 
+                </Grid>
+                <Grid Margin="26,0,29.5,35.5" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+                    <Path Data="M483,375 C653,375 652.5,375 652.5,375" Height="5" Margin="0,40,0,0" Stretch="Fill" Stroke="#FFB8B8B8" StrokeThickness="2" VerticalAlignment="Top"/>
+                    <Path Data="M483,375 C653,375 652.5,375 652.5,375" Height="5" Margin="0,0,0,47.04" Stretch="Fill" Stroke="#FFB8B8B8" StrokeThickness="2" VerticalAlignment="Bottom"/>
+                    <Grid Height="34" Margin="33,0,27.5,0" VerticalAlignment="Bottom">
+                        <Button x:Name="button" Content="Button" Style="{DynamicResource login}" Foreground="Black" FontFamily="Microsoft YaHei UI" FontSize="16" FontWeight="Bold" Background="#FF4D4A4A" Margin="-13.5,0,0,0"/>
+
+                    </Grid>
+                    <TextBlock x:Name="textBlock" Height="26" Margin="0,0,69.5,0" TextWrapping="Wrap" Text="用户名" VerticalAlignment="Top" FontFamily="Microsoft YaHei Light" FontSize="16"/>
+                    <TextBlock x:Name="textBlock_Copy" Margin="0,75.96,69.5,72.04" TextWrapping="Wrap" Text="密码" FontFamily="Microsoft YaHei Light" FontSize="16"/>
+                </Grid>
             </Grid>
-            <TextBlock x:Name="textBlock" Height="17" Margin="26,0,99,180" TextWrapping="Wrap" Text="用户名" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei Light"/>
-            <TextBlock x:Name="textBlock_Copy" Height="17" Margin="26,0,99,103.737" TextWrapping="Wrap" Text="密码" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei Light"/>
-            <Image x:Name="malecostume_512_png" Margin="59,60,53.624,294.5" Source="malecostume-512.png" Stretch="Fill"/>
-
         </Grid>
 
     </Grid>
