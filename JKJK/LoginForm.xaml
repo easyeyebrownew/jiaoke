@@ -16,14 +16,15 @@
         </Grid.Background>
         <Grid Margin="-8,0,10,10" Grid.ColumnSpan="2">
             <Grid Width="230" Height="470" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <TextBox x:Name="textBox" Height="19" Margin="26,0,99,160.5" TextWrapping="Wrap" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Opacity="0.6" FontStyle="Italic" FontFamily="Microsoft YaHei Light"/>
-                <PasswordBox x:Name="passwordBox" Margin="26,0,99,87.54" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Height="20" Background="{x:Null}" FontFamily="Microsoft YaHei Light" Opacity="0.6"/>
                 <Rectangle Fill="#FFF4F4F5" RadiusY="16.5" RadiusX="16.5" Opacity="0.905" RenderTransformOrigin="0.494,0.502" Width="230" Height="470"/>
                 <Grid Height="116" Margin="59,60,53.624,0" VerticalAlignment="Top">
                     <Image x:Name="malecostume_512_png" Source="malecostume-512.png" d:LayoutOverrides="VerticalAlignment"/>
 
                 </Grid>
                 <Grid Margin="26,0,29.5,35.5" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
+                    <PasswordBox x:Name="passwordBox" Margin="0,0,0,47.04" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Height="20" Background="{x:Null}" FontFamily="Microsoft YaHei Light" Opacity="0.6" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
+                    <TextBox x:Name="textBox" Height="19" Margin="0,0,0,129.5" TextWrapping="Wrap" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Opacity="0.6" FontStyle="Italic" FontFamily="Microsoft YaHei Light" d:LayoutOverrides="HorizontalAlignment"/>
+
                     <Path Data="M483,375 C653,375 652.5,375 652.5,375" Height="5" Margin="0,40,0,0" Stretch="Fill" Stroke="#FFB8B8B8" StrokeThickness="2" VerticalAlignment="Top"/>
                     <Path Data="M483,375 C653,375 652.5,375 652.5,375" Height="5" Margin="0,0,0,47.04" Stretch="Fill" Stroke="#FFB8B8B8" StrokeThickness="2" VerticalAlignment="Bottom"/>
                     <Grid Height="34" Margin="33,0,27.5,0" VerticalAlignment="Bottom">
