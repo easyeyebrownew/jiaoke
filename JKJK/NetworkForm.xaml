@@ -7,28 +7,30 @@
         mc:Ignorable="d"
         Title="NetworkForm" Height="1080" Width="1920">
     <Grid Margin="-1.334,0,1.334,0">
-        <Grid HorizontalAlignment="Left" Height="369" VerticalAlignment="Top" Width="224">
-            <Rectangle Height="129" StrokeThickness="2" VerticalAlignment="Top" Fill="#FF4BDCBB"/>
-            <Rectangle StrokeThickness="2" Fill="#FF233342" Margin="0,129,0,180"/>
-            <Button x:Name="button" Content="Button" Height="60" Margin="0,0,0,120" Style="{DynamicResource Tab}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
-            <Button x:Name="button_Copy" Content="Button" Height="60" Margin="0,0,0,60" Style="{DynamicResource 对象跟踪}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
-            <Button x:Name="button_Copy1" Content="Button" Height="60" Style="{DynamicResource 系统调控}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
-            <TextBlock x:Name="textBlock_Copy" Margin="64,142,48,180" TextWrapping="Wrap" Text="路网查看" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Foreground="White"/>
-            <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,44.817,5,0" TextWrapping="Wrap" Text="爱同济" Width="94" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" Opacity="0.9" Height="47" VerticalAlignment="Top"/>
-            <Image x:Name="malecostume_512_png" Source="malecostume-512.png" Margin="10,14.211,0,265" HorizontalAlignment="Left" Width="90.854"/>
-        </Grid>
-        <Rectangle Height="60" Margin="224,129,0,0" StrokeThickness="2" VerticalAlignment="Top" Fill="#FF4BDCBB"/>
-        <Grid Height="72" Margin="10,32,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="72.854">
-            <Image x:Name="malecostume_512_png_Copy" Source="malecostume-512.png" Margin="0,-17.789,-288,10" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Right" Width="80.735"/>
-            <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Right" Margin="0,-6,-430.146,31" TextWrapping="Wrap" Text="爱同济" Width="94" FontFamily="Microsoft YaHei UI" FontSize="24" Foreground="Black" Opacity="0.8"/>
-            <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Right" Margin="0,32,-622.146,-7" TextWrapping="Wrap" Width="286" FontFamily="Microsoft YaHei UI" FontSize="17.333" Foreground="#FF646464" Opacity="0.6"><Run Text="管理员"/><Run Text=" · 编号 "/><Run Text="1535485"/></TextBlock>
+        <Grid Height="369" Margin="0,0,37,0" VerticalAlignment="Top">
+            <Grid HorizontalAlignment="Left" Width="224">
+                <Rectangle Height="129" StrokeThickness="2" VerticalAlignment="Top" Fill="#FF4BDCBB"/>
+                <Rectangle StrokeThickness="2" Fill="#FF233342" Margin="0,129,0,180"/>
+                <Button x:Name="button" Content="Button" Height="60" Margin="0,0,0,120" Style="{DynamicResource Tab}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
+                <Button x:Name="button_Copy" Content="Button" Height="60" Margin="0,0,0,60" Style="{DynamicResource 对象跟踪}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
+                <Button x:Name="button_Copy1" Content="Button" Height="60" Style="{DynamicResource 系统调控}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
+                <TextBlock x:Name="textBlock_Copy" Margin="64,142,48,180" TextWrapping="Wrap" Text="路网查看" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,44.817,5,0" TextWrapping="Wrap" Text="爱同济" Width="94" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" Opacity="0.9" Height="47" VerticalAlignment="Top"/>
+                <Image x:Name="malecostume_512_png" Source="malecostume-512.png" Margin="10,14.211,0,265" HorizontalAlignment="Left" Width="90.854"/>
+                <Rectangle Margin="0,129,-1688,180" StrokeThickness="2" Fill="#FF4BDCBB" HorizontalAlignment="Right" Width="1688"/>
+            </Grid>
+            <Grid Height="72" Margin="10,32,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="72.854">
+                <Image x:Name="malecostume_512_png_Copy" Source="malecostume-512.png" Margin="0,-17.789,-288,10" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Right" Width="80.735"/>
+                <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Right" Margin="0,-6,-430.146,31" TextWrapping="Wrap" Text="爱同济" Width="94" FontFamily="Microsoft YaHei UI" FontSize="24" Foreground="Black" Opacity="0.8"/>
+                <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Right" Margin="0,32,-622.146,-7" TextWrapping="Wrap" Width="286" FontFamily="Microsoft YaHei UI" FontSize="17.333" Foreground="#FF646464" Opacity="0.6"><Run Text="管理员"/><Run Text=" · 编号 "/><Run Text="1535485"/></TextBlock>
 
+            </Grid>
+            <Button x:Name="button2" Content="登出" Style="{DynamicResource logout}" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Height="53.5" VerticalAlignment="Top" Width="144" Margin="0,35,0,0"/>
         </Grid>
         <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="239,142,0,0" TextWrapping="Wrap" Text="Time=" Width="94" FontFamily="Microsoft YaHei UI" FontSize="24" Foreground="White" Height="47" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="46.5" Margin="319.667,139.98,0,0" TextWrapping="Wrap" Text="time()" VerticalAlignment="Top" Width="136.5" Background="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei" FontSize="24" FontWeight="Bold"/>
         <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Height="76.602" Margin="842,115.84,0,0" Style="{DynamicResource enlarge}" VerticalAlignment="Top" Width="76.602" FontSize="53.333" FontWeight="Bold" Foreground="White"/>
         <Button x:Name="button1_Copy" Content="Button" HorizontalAlignment="Right" Height="76.602" Margin="0,115.84,847.398,0" Style="{DynamicResource ensmall.}" VerticalAlignment="Top" Width="76.602" FontSize="53.333" FontWeight="Bold" Foreground="White"/>
-        <Button x:Name="button2" Content="登出" Style="{DynamicResource logout}" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Height="53.5" VerticalAlignment="Top" Width="144" Margin="0,35,37,0"/>
 
     </Grid>
 </Window>
