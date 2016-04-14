@@ -44,5 +44,11 @@ namespace JKJK
             this.Hide();
             lf.showModification();
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+            lf.Show();
+        }
     }
 }

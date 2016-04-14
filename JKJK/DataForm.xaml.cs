@@ -28,7 +28,7 @@ namespace JKJK
         private void btNetwork_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();
-            lf.showNet();
+            lf.showAgent();
         }
         public void parself(LoginForm lf)
         {
@@ -38,6 +38,18 @@ namespace JKJK
         {
             this.Hide();
             lf.showModification();
+        }
+
+        private void btNetwork_Click_1(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.showNet();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.Show();
         }
     }
 }

@@ -28,5 +28,29 @@ namespace JKJK
         {
             this.lf = lf;
         }
+
+        private void btData_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.showData();
+        }
+
+        private void btModify_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.showModification();
+        }
+
+        private void btNetwork_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.showNet();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.Show();
+        }
     }
 }

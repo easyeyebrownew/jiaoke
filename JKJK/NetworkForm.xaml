@@ -25,7 +25,7 @@
                 <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Right" Margin="0,32,-622.146,-7" TextWrapping="Wrap" Width="286" FontFamily="Microsoft YaHei UI" FontSize="17.333" Foreground="#FF646464" Opacity="0.6"><Run Text="管理员"/><Run Text=" · 编号 "/><Run Text="1535485"/></TextBlock>
 
             </Grid>
-            <Button x:Name="button2" Content="登出" Style="{DynamicResource logout}" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Height="53.5" VerticalAlignment="Top" Width="144" Margin="0,35,0,0"/>
+            <Button x:Name="button2" Content="登出" Style="{DynamicResource logout}" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Height="53.5" VerticalAlignment="Top" Width="144" Margin="0,35,0,0" Click="button2_Click"/>
         </Grid>
         <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="239,142,0,0" TextWrapping="Wrap" Text="Time=" Width="94" FontFamily="Microsoft YaHei UI" FontSize="24" Foreground="White" Height="47" VerticalAlignment="Top" FontWeight="Bold"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="46.5" Margin="319.667,139.98,0,0" TextWrapping="Wrap" Text="time()" VerticalAlignment="Top" Width="136.5" Background="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei" FontSize="24" FontWeight="Bold" BorderBrush="{x:Null}"/>

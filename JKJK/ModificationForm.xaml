@@ -51,7 +51,7 @@
                     </Grid>
                     <Button x:Name="btData" Content="Button" Height="60" Margin="0,0,0,120" Style="{DynamicResource Tab}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btData_Click"/>
                     <Button x:Name="btAgent" Content="Button" Height="60" Margin="0,0,0,60" Style="{DynamicResource 对象跟踪}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btAgent_Click"/>
-                    <Button x:Name="btNetwork" Content="Button" Style="{DynamicResource 打发打发打发}" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Margin="0,129,0,180"/>
+                    <Button x:Name="btNetwork" Content="Button" Style="{DynamicResource 打发打发打发}" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Margin="0,129,0,180" Click="btNetwork_Click"/>
 
                     <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,44.817,5,0" TextWrapping="Wrap" Text="爱同济" Width="94" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" Opacity="0.9" Height="47" VerticalAlignment="Top"/>
                     <Image x:Name="malecostume_512_png" Source="malecostume-512.png" Margin="10,14.211,0,265" HorizontalAlignment="Left" Width="90.854"/>
@@ -63,7 +63,7 @@
                     <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Right" Margin="0,32,-622.146,-7" TextWrapping="Wrap" Width="286" FontFamily="Microsoft YaHei UI" FontSize="17.333" Foreground="#FF646464" Opacity="0.6"><Run Text="管理员"/><Run Text=" · 编号 "/><Run Text="1535485"/></TextBlock>
 
                 </Grid>
-                <Button x:Name="button2" Content="登出" Style="{DynamicResource logout}" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Height="53.5" VerticalAlignment="Top" Width="144" Margin="0,35,0,0"/>
+                <Button x:Name="button2" Content="登出" Style="{DynamicResource logout}" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Height="53.5" VerticalAlignment="Top" Width="144" Margin="0,35,0,0" Click="button2_Click"/>
             </Grid>
 
         </Grid>
@@ -71,6 +71,7 @@
         <Rectangle Fill="#FFECF0F1" HorizontalAlignment="Left" Margin="372,209,0,56" StrokeThickness="2" Width="564" RadiusY="24" RadiusX="24" Opacity="0.6"/>
         <Rectangle Fill="#FFECF0F1" HorizontalAlignment="Right" Margin="0,209,138,56" StrokeThickness="2" Width="564" RadiusY="24" RadiusX="24" Opacity="0.6"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="98" Margin="470,279,0,0" TextWrapping="Wrap" Text="标致点占比" VerticalAlignment="Top" Width="368" FontFamily="Microsoft YaHei Light" FontSize="66.667" Opacity="0.8"/>
+        <Button x:Name="button1_Copy" Content="Button" Style="{DynamicResource djgg}" FontFamily="Microsoft YaHei UI" FontSize="40" Foreground="White" Margin="0,0,138,116" Height="66" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="564" d:LayoutOverrides="VerticalAlignment"/>
         <Grid HorizontalAlignment="Left" Margin="450,409,0,252" Width="388">
             <Ellipse Fill="#FFB568F2" StrokeThickness="2" Opacity="0.6" Margin="10"/>
 
@@ -80,7 +81,6 @@
         </Grid>
         <Grid HorizontalAlignment="Left" Height="66" Margin="372,0,0,116" VerticalAlignment="Bottom" Width="564">
             <Button x:Name="button1" Content="Button" Style="{DynamicResource 点击更改11}" FontFamily="Microsoft YaHei UI" FontSize="40" Foreground="White"/>
-            <Button x:Name="button1_Copy" Content="Button" Style="{DynamicResource djgg}" FontFamily="Microsoft YaHei UI" FontSize="40" Foreground="White" HorizontalAlignment="Right" Margin="0,0,-838,0" Width="564"/>
 
         </Grid>
         <Grid HorizontalAlignment="Right" Margin="0,409,212,252" Width="388">

@@ -44,7 +44,7 @@
             <Grid HorizontalAlignment="Left" Width="224">
                 <Rectangle Height="129" StrokeThickness="2" VerticalAlignment="Top" Fill="#FF4BDCBB"/>
                 <Rectangle StrokeThickness="2" Fill="#FF233342" Margin="0,0,0,118.24" Height="60" VerticalAlignment="Bottom"/>
-                <Button x:Name="btNetwork" Content="Button" Margin="2,129,-2,180" Style="{DynamicResource ddddddddddddddddddddddddddddddddd}" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
+                <Button x:Name="btNetwork" Content="Button" Margin="0,131,0,178" Style="{DynamicResource ddddddddddddddddddddddddddddddddd}" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btNetwork_Click_1"/>
                 <Button x:Name="btAgent" Content="Button" Height="60" Margin="0,0,0,60" Style="{DynamicResource 对象跟踪}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btNetwork_Click"/>
                 <Button x:Name="btModify" Content="Button" Height="60" Style="{DynamicResource 系统调控}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btModify_Click"/>
                 <TextBlock x:Name="textBlock_Copy" Margin="64,0,48,118.24" TextWrapping="Wrap" Text="数据监控" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Foreground="White" Height="47" VerticalAlignment="Bottom"/>
@@ -65,7 +65,7 @@
                 <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Right" Margin="0,-6,-430.146,31" TextWrapping="Wrap" Text="爱同济" Width="94" FontFamily="Microsoft YaHei UI" FontSize="24" Foreground="Black" Opacity="0.8"/>
                 <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Right" Margin="0,32,-622.146,-7" TextWrapping="Wrap" Width="286" FontFamily="Microsoft YaHei UI" FontSize="17.333" Foreground="#FF646464" Opacity="0.6"><Run Text="管理员"/><Run Text=" · 编号 "/><Run Text="1535485"/></TextBlock>
             </Grid>
-            <Button x:Name="button2" Content="登出" Style="{DynamicResource logout}" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Height="53.5" VerticalAlignment="Top" Width="144" Margin="0,35,0,0"/>
+            <Button x:Name="button2" Content="登出" Style="{DynamicResource logout}" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Height="53.5" VerticalAlignment="Top" Width="144" Margin="0,35,0,0" Click="button2_Click"/>
         </Grid>
 
     </Grid>

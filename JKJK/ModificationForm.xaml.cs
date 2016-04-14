@@ -38,5 +38,17 @@ namespace JKJK
         {
             this.lf = lf;
         }
+
+        private void btNetwork_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.showNet();
+        }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.Show();
+        }
     }
 }
