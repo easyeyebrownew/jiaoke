@@ -29,7 +29,6 @@ namespace JKJK
             this.Hide();
             lf.showData();
         }
-
         private void btAgent_Click(object sender, RoutedEventArgs e)
         {
             this.Hide();

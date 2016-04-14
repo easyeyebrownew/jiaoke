@@ -26,15 +26,10 @@
                 <Rectangle Fill="#FFFDFDFD" HorizontalAlignment="Right" Height="129" Margin="0,0,-1690,0" StrokeThickness="2" VerticalAlignment="Top" Width="1688"/>
                 <charting:Chart Name="LineChart" HorizontalAlignment="Right" VerticalAlignment="Top" Width="1688" Height="922" Margin="0,129,-1690,-682">
                     <charting:Chart.Axes>
-
                         <charting:LinearAxis Orientation="X" Title="Time" Interval="20" ShowGridLines="False"/>
-
                         <charting:LinearAxis Title="Service rate" Orientation="Y" Interval="5" ShowGridLines="False"/>
-
                     </charting:Chart.Axes>
-
                     <charting:LineSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" IsSelectionEnabled="True"  
-
                                     AnimationSequence="FirstToLast"/>
                 </charting:Chart>
             </Grid>
