@@ -23,5 +23,21 @@ namespace JKJK
         {
             InitializeComponent();
         }
+        LoginForm lf;
+        private void btData_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.showData();
+        }
+
+        private void btAgent_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.showAgent();
+        }
+        public void parself(LoginForm lf)
+        {
+            this.lf = lf;
+        }
     }
 }

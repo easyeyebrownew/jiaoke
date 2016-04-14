@@ -19,9 +19,25 @@ namespace JKJK
     /// </summary>
     public partial class DataForm : Window
     {
+        LoginForm lf;
         public DataForm()
         {
             InitializeComponent();
+        }
+
+        private void btNetwork_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.showNet();
+        }
+        public void parself(LoginForm lf)
+        {
+            this.lf = lf;
+        }
+        private void btModify_Click(object sender, RoutedEventArgs e)
+        {
+            this.Hide();
+            lf.showModification();
         }
     }
 }

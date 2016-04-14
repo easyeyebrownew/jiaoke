@@ -23,12 +23,12 @@
                 </Grid>
                 <Grid Margin="26,0,29.5,35.5" VerticalAlignment="Bottom" RenderTransformOrigin="0.5,0.5">
                     <PasswordBox x:Name="passwordBox" Margin="0,0,0,47.04" VerticalAlignment="Bottom" BorderBrush="{x:Null}" Height="20" Background="{x:Null}" FontFamily="Microsoft YaHei Light" Opacity="0.6" d:LayoutOverrides="HorizontalAlignment, VerticalAlignment"/>
-                    <TextBox x:Name="textBox" Height="19" Margin="0,0,0,129.5" TextWrapping="Wrap" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Opacity="0.6" FontStyle="Italic" FontFamily="Microsoft YaHei Light" d:LayoutOverrides="HorizontalAlignment"/>
+                    <TextBox x:Name="tbUser" Height="19" Margin="0,0,0,129.5" TextWrapping="Wrap" VerticalAlignment="Bottom" Background="{x:Null}" BorderBrush="{x:Null}" Opacity="0.6" FontStyle="Italic" FontFamily="Microsoft YaHei Light" d:LayoutOverrides="HorizontalAlignment"/>
 
                     <Path Data="M483,375 C653,375 652.5,375 652.5,375" Height="5" Margin="0,40,0,0" Stretch="Fill" Stroke="#FFB8B8B8" StrokeThickness="2" VerticalAlignment="Top"/>
                     <Path Data="M483,375 C653,375 652.5,375 652.5,375" Height="5" Margin="0,0,0,47.04" Stretch="Fill" Stroke="#FFB8B8B8" StrokeThickness="2" VerticalAlignment="Bottom"/>
                     <Grid Height="34" Margin="33,0,27.5,0" VerticalAlignment="Bottom">
-                        <Button x:Name="button" Content="Button" Style="{DynamicResource login}" Foreground="Black" FontFamily="Microsoft YaHei UI" FontSize="16" FontWeight="Bold" Background="#FF4D4A4A" Margin="-13.5,0,0,0"/>
+                        <Button x:Name="btLogin" Content="Button" Style="{DynamicResource login}" Foreground="Black" FontFamily="Microsoft YaHei UI" FontSize="16" FontWeight="Bold" Background="#FF4D4A4A" Margin="-13.5,0,0,0" Click="btLogin_Click"/>
 
                     </Grid>
                     <TextBlock x:Name="textBlock" Height="26" Margin="0,0,69.5,0" TextWrapping="Wrap" Text="用户名" VerticalAlignment="Top" FontFamily="Microsoft YaHei Light" FontSize="16"/>

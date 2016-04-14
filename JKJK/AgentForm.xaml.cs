@@ -23,5 +23,10 @@ namespace JKJK
         {
             InitializeComponent();
         }
+        LoginForm lf;
+        public void parself(LoginForm lf)
+        {
+            this.lf = lf;
+        }
     }
 }

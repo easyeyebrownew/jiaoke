@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:JKJK"
+        xmlns:charting="clr-namespace:System.Windows.Controls.DataVisualization.Charting;assembly=System.Windows.Controls.DataVisualization.Toolkit"
         mc:Ignorable="d"
         Title="DataForm" Height="1080" Width="1920">
     <Grid>
@@ -16,19 +17,31 @@
             <Grid HorizontalAlignment="Left" Width="224">
                 <Rectangle Height="129" StrokeThickness="2" VerticalAlignment="Top" Fill="#FF4BDCBB"/>
                 <Rectangle StrokeThickness="2" Fill="#FF233342" Margin="0,129,0,180"/>
-                <Button x:Name="button" Content="Button" Height="60" Margin="0,0,0,120" Style="{DynamicResource Tab}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
-                <Button x:Name="button_Copy" Content="Button" Height="60" Margin="0,0,0,60" Style="{DynamicResource 对象跟踪}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
-                <Button x:Name="button_Copy1" Content="Button" Height="60" Style="{DynamicResource 系统调控}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
+                <Button x:Name="btShowdata" Content="Button" Height="60" Margin="0,0,0,120" Style="{DynamicResource Tab}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
+                <Button x:Name="btNetwork" Content="Button" Height="60" Margin="0,0,0,60" Style="{DynamicResource 对象跟踪}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btNetwork_Click"/>
+                <Button x:Name="btModify" Content="Button" Height="60" Style="{DynamicResource 系统调控}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btModify_Click"/>
                 <TextBlock x:Name="textBlock_Copy" Margin="64,142,48,180" TextWrapping="Wrap" Text="路网查看" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Foreground="White"/>
                 <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,44.817,5,0" TextWrapping="Wrap" Text="爱同济" Width="94" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" Opacity="0.9" Height="47" VerticalAlignment="Top"/>
                 <Image x:Name="malecostume_512_png" Source="malecostume-512.png" Margin="10,14.211,0,265" HorizontalAlignment="Left" Width="90.854"/>
                 <Rectangle Fill="#FFFDFDFD" HorizontalAlignment="Right" Height="129" Margin="0,0,-1690,0" StrokeThickness="2" VerticalAlignment="Top" Width="1688"/>
+                <charting:Chart Name="LineChart" HorizontalAlignment="Right" VerticalAlignment="Top" Width="1688" Height="922" Margin="0,129,-1690,-682">
+                    <charting:Chart.Axes>
+
+                        <charting:LinearAxis Orientation="X" Title="Time" Interval="20" ShowGridLines="False"/>
+
+                        <charting:LinearAxis Title="Service rate" Orientation="Y" Interval="5" ShowGridLines="False"/>
+
+                    </charting:Chart.Axes>
+
+                    <charting:LineSeries DependentValuePath="Value" IndependentValuePath="Key" ItemsSource="{Binding}" IsSelectionEnabled="True"  
+
+                                    AnimationSequence="FirstToLast"/>
+                </charting:Chart>
             </Grid>
             <Grid Height="72" Margin="10,32,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Width="72.854">
                 <Image x:Name="malecostume_512_png_Copy" Source="malecostume-512.png" Margin="0,-17.789,-288,10" d:LayoutOverrides="VerticalAlignment" HorizontalAlignment="Right" Width="80.735"/>
                 <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Right" Margin="0,-6,-430.146,31" TextWrapping="Wrap" Text="爱同济" Width="94" FontFamily="Microsoft YaHei UI" FontSize="24" Foreground="Black" Opacity="0.8"/>
                 <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Right" Margin="0,32,-622.146,-7" TextWrapping="Wrap" Width="286" FontFamily="Microsoft YaHei UI" FontSize="17.333" Foreground="#FF646464" Opacity="0.6"><Run Text="管理员"/><Run Text=" · 编号 "/><Run Text="1535485"/></TextBlock>
-
             </Grid>
             <Button x:Name="button2" Content="登出" Style="{DynamicResource logout}" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Height="53.5" VerticalAlignment="Top" Width="144" Margin="0,35,0,0"/>
         </Grid>
