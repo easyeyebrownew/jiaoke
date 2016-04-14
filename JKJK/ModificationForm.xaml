@@ -6,6 +6,33 @@
         xmlns:local="clr-namespace:JKJK"
         mc:Ignorable="d"
         Title="ModificationForm" Height="1080" Width="1920">
+    <Window.Resources>
+        <Style x:Key="打发打发打发" TargetType="{x:Type Button}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Grid>
+                            <Rectangle x:Name="rectangle" StrokeThickness="2"/>
+
+                            <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}" Content="路网查看"/>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsFocused" Value="True"/>
+                            <Trigger Property="IsDefaulted" Value="True"/>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Fill" TargetName="rectangle" Value="#FF4FC9AD"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Fill" TargetName="rectangle" Value="#FF233342"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False"/>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+            <Setter Property="Foreground" Value="#FF92A2A2"/>
+        </Style>
+    </Window.Resources>
     <Grid>
 
         <Grid>
@@ -18,13 +45,13 @@
                 <Grid HorizontalAlignment="Left" Width="224">
                     <Rectangle Height="129" StrokeThickness="2" VerticalAlignment="Top" Fill="#FF4BDCBB"/>
 
-                <Grid Height="60" VerticalAlignment="Bottom">
+                    <Grid Height="60" VerticalAlignment="Bottom">
                         <Rectangle StrokeThickness="2" Fill="#FF233342"/>
                         <TextBlock x:Name="textBlock_Copy" Margin="64,13,48,0" TextWrapping="Wrap" Text="系统调控" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Foreground="White"/>
-                </Grid>
-                <Button x:Name="btData" Content="Button" Height="60" Margin="0,0,0,120" Style="{DynamicResource Tab}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btData_Click"/>
+                    </Grid>
+                    <Button x:Name="btData" Content="Button" Height="60" Margin="0,0,0,120" Style="{DynamicResource Tab}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btData_Click"/>
                     <Button x:Name="btAgent" Content="Button" Height="60" Margin="0,0,0,60" Style="{DynamicResource 对象跟踪}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btAgent_Click"/>
-                    <Button x:Name="button_Copy1" Content="Button" Height="60" Style="{DynamicResource 系统调控}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
+                    <Button x:Name="btNetwork" Content="Button" Style="{DynamicResource 打发打发打发}" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Margin="0,129,0,180"/>
 
                     <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,44.817,5,0" TextWrapping="Wrap" Text="爱同济" Width="94" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" Opacity="0.9" Height="47" VerticalAlignment="Top"/>
                     <Image x:Name="malecostume_512_png" Source="malecostume-512.png" Margin="10,14.211,0,265" HorizontalAlignment="Left" Width="90.854"/>

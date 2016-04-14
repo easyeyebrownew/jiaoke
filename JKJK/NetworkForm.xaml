@@ -28,7 +28,7 @@
             <Button x:Name="button2" Content="登出" Style="{DynamicResource logout}" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" HorizontalAlignment="Right" Height="53.5" VerticalAlignment="Top" Width="144" Margin="0,35,0,0"/>
         </Grid>
         <TextBlock x:Name="textBlock_Copy3" HorizontalAlignment="Left" Margin="239,142,0,0" TextWrapping="Wrap" Text="Time=" Width="94" FontFamily="Microsoft YaHei UI" FontSize="24" Foreground="White" Height="47" VerticalAlignment="Top" FontWeight="Bold"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="46.5" Margin="319.667,139.98,0,0" TextWrapping="Wrap" Text="time()" VerticalAlignment="Top" Width="136.5" Background="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei" FontSize="24" FontWeight="Bold"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="46.5" Margin="319.667,139.98,0,0" TextWrapping="Wrap" Text="time()" VerticalAlignment="Top" Width="136.5" Background="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei" FontSize="24" FontWeight="Bold" BorderBrush="{x:Null}"/>
         <Button x:Name="button1" Content="Button" HorizontalAlignment="Left" Height="76.602" Margin="842,115.84,0,0" Style="{DynamicResource enlarge}" VerticalAlignment="Top" Width="76.602" FontSize="53.333" FontWeight="Bold" Foreground="White"/>
         <Button x:Name="button1_Copy" Content="Button" HorizontalAlignment="Right" Height="76.602" Margin="0,115.84,847.398,0" Style="{DynamicResource ensmall.}" VerticalAlignment="Top" Width="76.602" FontSize="53.333" FontWeight="Bold" Foreground="White"/>
 

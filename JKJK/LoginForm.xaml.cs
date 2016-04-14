@@ -37,11 +37,12 @@ namespace JKJK
         ModificationForm mf;
         private void btLogin_Click(object sender, RoutedEventArgs e)
         {
-            if (tbUser.Text == "admin")
+            if (tbUser.Text == "admin" && passwordBox.Password == "admin")
             {
                 nf.Show();
+                this.Hide();
             }
-            this.Hide();
+
         }
         public void hideNet()
         {
