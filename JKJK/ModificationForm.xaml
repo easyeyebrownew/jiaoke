@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="ModificationForm" Height="1080" Width="1920">
     <Grid>
+
         <Grid>
 
             <Grid Height="369" Margin="0,0,37,0" VerticalAlignment="Top">
@@ -16,11 +17,15 @@
 
                 <Grid HorizontalAlignment="Left" Width="224">
                     <Rectangle Height="129" StrokeThickness="2" VerticalAlignment="Top" Fill="#FF4BDCBB"/>
-                    <Rectangle StrokeThickness="2" Fill="#FF233342" Margin="0,129,0,180"/>
-                    <Button x:Name="btData" Content="Button" Height="60" Margin="0,0,0,120" Style="{DynamicResource Tab}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btData_Click"/>
+
+                <Grid Height="60" VerticalAlignment="Bottom">
+                        <Rectangle StrokeThickness="2" Fill="#FF233342"/>
+                        <TextBlock x:Name="textBlock_Copy" Margin="64,13,48,0" TextWrapping="Wrap" Text="系统调控" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Foreground="White"/>
+                </Grid>
+                <Button x:Name="btData" Content="Button" Height="60" Margin="0,0,0,120" Style="{DynamicResource Tab}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btData_Click"/>
                     <Button x:Name="btAgent" Content="Button" Height="60" Margin="0,0,0,60" Style="{DynamicResource 对象跟踪}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Click="btAgent_Click"/>
                     <Button x:Name="button_Copy1" Content="Button" Height="60" Style="{DynamicResource 系统调控}" VerticalAlignment="Bottom" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold"/>
-                    <TextBlock x:Name="textBlock_Copy" Margin="64,142,48,180" TextWrapping="Wrap" Text="路网查看" FontFamily="Microsoft YaHei UI" FontSize="24" FontWeight="Bold" Foreground="White"/>
+
                     <TextBlock x:Name="textBlock" HorizontalAlignment="Right" Margin="0,44.817,5,0" TextWrapping="Wrap" Text="爱同济" Width="94" FontFamily="Microsoft YaHei UI" FontSize="26.667" FontWeight="Bold" Foreground="White" Opacity="0.9" Height="47" VerticalAlignment="Top"/>
                     <Image x:Name="malecostume_512_png" Source="malecostume-512.png" Margin="10,14.211,0,265" HorizontalAlignment="Left" Width="90.854"/>
                     <Rectangle Fill="#FFFDFDFD" HorizontalAlignment="Right" Height="129" Margin="0,0,-1690,0" StrokeThickness="2" VerticalAlignment="Top" Width="1688"/>
@@ -35,6 +40,32 @@
             </Grid>
 
         </Grid>
+        <Image x:Name="search_jpg" Margin="224,129,-41,-60" Source="search.jpg" Stretch="Fill" Opacity="0.8"/>
+        <Rectangle Fill="#FFECF0F1" HorizontalAlignment="Left" Margin="372,209,0,56" StrokeThickness="2" Width="564" RadiusY="24" RadiusX="24" Opacity="0.6"/>
+        <Rectangle Fill="#FFECF0F1" HorizontalAlignment="Right" Margin="0,209,138,56" StrokeThickness="2" Width="564" RadiusY="24" RadiusX="24" Opacity="0.6"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="98" Margin="470,279,0,0" TextWrapping="Wrap" Text="标致点占比" VerticalAlignment="Top" Width="368" FontFamily="Microsoft YaHei Light" FontSize="66.667" Opacity="0.8"/>
+        <Grid HorizontalAlignment="Left" Margin="450,409,0,252" Width="388">
+            <Ellipse Fill="#FFB568F2" StrokeThickness="2" Opacity="0.6" Margin="10"/>
+
+            <Ellipse Fill="#FFB568F2" Margin="60" StrokeThickness="2" Opacity="0.4"/>
+            <Ellipse Fill="#FFB568F2" Margin="84,84,82,82" StrokeThickness="2" Opacity="0.4"/>
+
+        </Grid>
+        <Grid HorizontalAlignment="Left" Height="66" Margin="372,0,0,116" VerticalAlignment="Bottom" Width="564">
+            <Button x:Name="button1" Content="Button" Style="{DynamicResource 点击更改11}" FontFamily="Microsoft YaHei UI" FontSize="40" Foreground="White"/>
+            <Button x:Name="button1_Copy" Content="Button" Style="{DynamicResource djgg}" FontFamily="Microsoft YaHei UI" FontSize="40" Foreground="White" HorizontalAlignment="Right" Margin="0,0,-838,0" Width="564"/>
+
+        </Grid>
+        <Grid HorizontalAlignment="Right" Margin="0,409,212,252" Width="388">
+            <Ellipse Fill="#FFEC924E" StrokeThickness="2" Opacity="0.6" Margin="10"/>
+
+            <Ellipse Fill="#FFED9747" Margin="60" StrokeThickness="2" Opacity="0.5"/>
+            <Ellipse Fill="#FFF37D2B" Margin="84,84,82,82" StrokeThickness="2" Opacity="0.5"/>
+
+        </Grid>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Right" Height="98" Margin="0,279,212,0" TextWrapping="Wrap" Text="出租车数量" VerticalAlignment="Top" Width="368" FontFamily="Microsoft YaHei Light" FontSize="66.667" Opacity="0.8"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="76" Margin="576,0,0,417" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Width="144" Background="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei Light" FontSize="66.667" BorderBrush="{x:Null}"/>
+        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Right" Height="76" Margin="0,0,326,417" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Width="144" Background="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei Light" FontSize="66.667" BorderBrush="{x:Null}"/>
 
     </Grid>
 </Window>
