@@ -52,5 +52,24 @@ namespace JKJK
             this.Hide();
             lf.Show();
         }
+        DateTime dt = DateTime.Now;
+        
+        private void button2_Copy_Click(object sender, RoutedEventArgs e)
+        {
+            Random rd = new Random();
+            String[] faceset = { "上", "下", "左", "右" };
+            TimeSpan ts = DateTime.Now - dt;
+            tbcNumber.Text = tbIndex.Text;
+            double x = rd.NextDouble() * 10 + ts.TotalMilliseconds / 100.0;
+            if(x>120)
+            {
+                x = (int)x % 120+rd.NextDouble();
+            }
+            tbTime.Text = Math.Round(x, 2).ToString();
+            tbDes.Text = rd.Next(25).ToString();
+            tbCoorx.Text = (Math.Round(rd.NextDouble() * 500)).ToString();
+            tbCoorY.Text=( Math.Round(rd.NextDouble() * 500)).ToString();
+            tbFace.Text = faceset[rd.Next(3)];
+        }
     }
 }

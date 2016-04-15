@@ -70,13 +70,18 @@
         <Image x:Name="search_jpg" Margin="224,129,-41,-60" Source="search.jpg" Stretch="Fill" Opacity="0.8"/>
         <Rectangle Fill="#FFECF0F1" HorizontalAlignment="Left" Margin="372,209,0,56" StrokeThickness="2" Width="564" RadiusY="24" RadiusX="24" Opacity="0.6"/>
         <Rectangle Fill="#FFECF0F1" HorizontalAlignment="Right" Margin="0,209,138,56" StrokeThickness="2" Width="564" RadiusY="24" RadiusX="24" Opacity="0.6"/>
-        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="98" Margin="470,279,0,0" TextWrapping="Wrap" Text="标致点占比" VerticalAlignment="Top" Width="368" FontFamily="Microsoft YaHei Light" FontSize="66.667" Opacity="0.8"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Height="98" Margin="470,248,0,0" TextWrapping="Wrap" Text="标致点占比" VerticalAlignment="Top" Width="368" FontFamily="Microsoft YaHei Light" FontSize="66.667" Opacity="0.8"/>
         <Button x:Name="button1_Copy" Content="Button" Style="{DynamicResource djgg}" FontFamily="Microsoft YaHei UI" FontSize="40" Foreground="White" Margin="0,0,138,116" Height="66" VerticalAlignment="Bottom" HorizontalAlignment="Right" Width="564" d:LayoutOverrides="VerticalAlignment"/>
         <Grid HorizontalAlignment="Left" Margin="450,409,0,252" Width="388">
             <Ellipse Fill="#FFB568F2" StrokeThickness="2" Opacity="0.6" Margin="10"/>
 
             <Ellipse Fill="#FFB568F2" Margin="60" StrokeThickness="2" Opacity="0.4"/>
-            <Ellipse Fill="#FFB568F2" Margin="84,84,82,82" StrokeThickness="2" Opacity="0.4"/>
+            <Grid Margin="84,84,82,82">
+
+                <Ellipse Fill="#FFB568F2" StrokeThickness="2" Opacity="0.4"/>
+                <TextBox x:Name="textBox" Margin="56,63,22,83" TextWrapping="Wrap" Text="0.5" Background="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei Light" FontSize="66.667" BorderBrush="{x:Null}"/>
+
+            </Grid>
 
         </Grid>
         <Grid HorizontalAlignment="Left" Height="66" Margin="372,0,0,116" VerticalAlignment="Bottom" Width="564">
@@ -87,12 +92,19 @@
             <Ellipse Fill="#FFEC924E" StrokeThickness="2" Opacity="0.6" Margin="10"/>
 
             <Ellipse Fill="#FFED9747" Margin="60" StrokeThickness="2" Opacity="0.5"/>
-            <Ellipse Fill="#FFF37D2B" Margin="84,84,82,82" StrokeThickness="2" Opacity="0.5"/>
+            <Grid Margin="84,84,82,82">
+                <Ellipse Fill="#FFF37D2B" StrokeThickness="2" Opacity="0.5"/>
+                <TextBox x:Name="textBox_Copy" Margin="68,64,10,82" TextWrapping="Wrap" Text="35" Background="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei Light" FontSize="66.667" BorderBrush="{x:Null}"/>
+
+            </Grid>
 
         </Grid>
-        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Right" Height="98" Margin="0,279,212,0" TextWrapping="Wrap" Text="出租车数量" VerticalAlignment="Top" Width="368" FontFamily="Microsoft YaHei Light" FontSize="66.667" Opacity="0.8"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="76" Margin="576,0,0,417" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Width="144" Background="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei Light" FontSize="66.667" BorderBrush="{x:Null}"/>
-        <TextBox x:Name="textBox_Copy" HorizontalAlignment="Right" Height="76" Margin="0,0,326,417" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Bottom" Width="144" Background="{x:Null}" Foreground="White" FontFamily="Microsoft YaHei Light" FontSize="66.667" BorderBrush="{x:Null}"/>
+        <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Right" Height="98" Margin="0,248,212,0" TextWrapping="Wrap" Text="出租车数量" VerticalAlignment="Top" Width="368" FontFamily="Microsoft YaHei Light" FontSize="66.667" Opacity="0.8"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Height="58" Margin="545,347.56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Foreground="Black" FontFamily="Microsoft YaHei" FontSize="26.667"><Run Text="系统"/><Run Text="评估："/></TextBlock>
+        <TextBox x:Name="tbAssK" HorizontalAlignment="Left" Height="55" Margin="679,346,0,0" TextWrapping="Wrap" Text="恰好" VerticalAlignment="Top" Width="114" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" FontSize="26.667"/>
+        <TextBlock x:Name="textBlock2_Copy" HorizontalAlignment="Right" Height="58" Margin="0,347.56,369,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="134" Foreground="Black" FontFamily="Microsoft YaHei" FontSize="26.667"><Run Text="系统"/><Run Text="评估："/></TextBlock>
+        <TextBox x:Name="tbAssK_Copy" HorizontalAlignment="Right" Height="55" Margin="0,346,255,0" TextWrapping="Wrap" Text="恰好" VerticalAlignment="Top" Width="114" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="Black" FontSize="26.667"/>
+        <Rectangle Fill="#FFFDFDFD" HorizontalAlignment="Left" Height="36" Margin="777.5,54,0,0" Stroke="Black" VerticalAlignment="Top" Width="158.5"/>
 
     </Grid>
 </Window>
